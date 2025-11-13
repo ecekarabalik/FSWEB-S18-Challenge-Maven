@@ -128,6 +128,7 @@ class FswebS18ChallengeMavenApplicationTests {
 						.content(objectMapper.writeValueAsString(card)))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$.color", is(card.getColor().toString())));
+
 	}
 
 	@Test
